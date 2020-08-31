@@ -1,0 +1,26 @@
+flask
+tornado
+nest_asyncio
+asyncpg
+sqlalchemy
+redis
+
+openpyxl
+
+requests
+bs4
+
+numpy
+pandas
+plotly
+ib_insync
+
+sktime
+
+pydruid[async, pandas,sqlalchemy,cli]
+
+jupyter
+qgrid
+jupyterlab
+jupyterthemes
+jupyter_contrib_nbextensions

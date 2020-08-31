@@ -1,0 +1,5 @@
+# Java tuning
+POSTGRES_PASSWORD=FoolishPassword
+POSTGRES_USER=postgres
+POSTGRES_DB=stocks
+

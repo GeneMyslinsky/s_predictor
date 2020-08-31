@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  predictor:
+    build: .
+    volumes:
+        - ./code:/app/code
+        - ./storage/predictor:/app/storage
+        - ./settings:/root
+    ports:
+      - "9000:8888"
+    env_file:
+      - environment
+    restart: on-failure
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    volumes:
+      - ./storage/pg:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file:
+      - environment
+    restart: on-failure
