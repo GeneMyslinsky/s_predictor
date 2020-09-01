@@ -1,32 +1,3 @@
-{
-  "load_extensions": {
-    "nbextensions_configurator/config_menu/main": true,
-    "contrib_nbextensions_help_item/main": true,
-    "autosavetime/main": true,
-    "code_prettify/code_prettify": true,
-    "collapsible_headings/main": true,
-    "highlight_selected_word/main": true,
-    "notify/notify": true,
-    "varInspector/main": true,
-    "toc2/main": true,
-    "execute_time/ExecuteTime": true,
-    "hinterland/hinterland": true,
-    "toggle_all_line_numbers/main": true,
-    "code_font_size/code_font_size": true,
-    "move_selected_cells/main": true,
-    "init_cell/main": true,
-    "splitcell/splitcell": true,
-    "skip-traceback/main": true,
-    "runtools/main": true
-  },
-  "highlight_selected_word": {
-    "highlight_color": "#a58040",
-    "highlight_color_blurred": "#7c1d1d",
-    "outlines_only": true
-  },
-  "Cell": {
-    "cm_config": {
-      "lineNumbers": true
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:feb615c22d2329ab585c82d0be16b2e43ff9d23389ee3cb611a5a71ea6e80b56
+size 891

@@ -1,6 +1,3 @@
-Type: IPython Notebook Extension
-Name: SKILL Syntax
-Description: Enable SKILL syntax support for CodeMirror
-Link: README.md
-Main: main.js
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ff9404b3a2c7c06cc88c3605018b2dc9d25ee8489d7484b266c6d96b362c829
+size 162

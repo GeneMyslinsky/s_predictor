@@ -1,7 +1,3 @@
-{
-  "NotebookApp": {
-    "nbserver_extensions": {
-      "jupyter_nbextensions_configurator": true
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:78c0390b66b2dc92270c59e43d0255f96c8ff80714eae05c015043bdbf84b74a
+size 109

@@ -1,7 +1,3 @@
-Export HTML With Embedded Images
-================================
-This extension allows exporting an embedded HTML by an additional download option in File -> Download -> HTML Embedded, (works like: jupyter nbconvert --to html_embed notebook.ipynb)
-
-**Note**: This extension can so far only successfully read relative images paths in the markdown cells (e.g. `![](graphics/pic.png)`)  when jupyter is started in the same folder (working directory) where the relative paths can be resolved!
- 
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e94c81bb6c515c31444fcfd38b616f2d32604d0c45e1e2b12e7175bd6a19d7e
+size 493

@@ -1,11 +1,3 @@
-Comment/Uncomment
-=================
-
-Adds a new configurable hotkey binding to toggle comments on/off.
-
-Options
--------
-
-**comment_uncomment_keybinding**: keybinding for toggling comments (default: Alt-c)
-
-***comment_uncomment_indent***: add comment at current indent level instead of at beginning of line
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5b05968636ab28c51c13ddd3d411c37183ddcbb68c34a471529635d78f384ed
+size 306

@@ -1,12 +1,3 @@
-{
-  "shell_port": 49303,
-  "iopub_port": 41913,
-  "stdin_port": 41995,
-  "control_port": 34213,
-  "hb_port": 57083,
-  "ip": "127.0.0.1",
-  "key": "83a16bc2-0ab5c71734bd536d8b588908",
-  "transport": "tcp",
-  "signature_scheme": "hmac-sha256",
-  "kernel_name": ""
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3c7a07a2ea8b425b7ffccf4443b7ba7bdec6d454222dbb07067e9d82b08dde4
+size 263

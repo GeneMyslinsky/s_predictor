@@ -1,17 +1,3 @@
-
-Purpose
-=======
-This extension loads a tex file whenever a notebook is loaded, then re-runs
-mathjax. It's useful if you have several notebooks that use a common set of latex
-macros, so you don't have to copy the macros to each notebook.
-
-Usage
-=====
-
-Simply put your latex macros in a file named latexdefs.tex, in the same directory as your notebook.
-
-
-Credit
-======
-
-This is derived entirely from the nbextension `jupyter_latex_envs`, with help from its author @jfbercher.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e57ec4a1409fa243a7923e46d0c0a3d7bff6706feceda81db79df5cfaafa0725
+size 475

@@ -1,14 +1,3 @@
-Select CodeMirror Keymap
-=======
-
-This extension lets you choose between the available CodeMirror keymaps: default, emacs, vim, and sublime.
-
-There's a chance that this might cause key conflicts, especially with other extensions.
-
-Most browsers consume some of the global keybindings like `Ctrl+n`. [The Menu Wizard add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/s3menu-wizard/) allows you to disable some of the global key shortcuts, thus passing the keys through to CodeMirror.
-
-![Demo](select_keymap.png)
-
-Based on:
- * [jupyter-emacskeys](https://github.com/rmcgibbo/jupyter-emacskeys)
- * [notebook_input_mode](https://github.com/asford/notebook_input_mode)
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbe1952640d775930042490c20dcc4c7be3c52c9127e01f625e5c4e92502af11
+size 681

@@ -1,16 +1,3 @@
-Type: IPython Notebook Extension
-Name: Printview
-Description: Calls nbconvert and shows the generated output in a new browser tab
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: printview_nbconvert_options
-  description: nbconvert options
-  input_type: string
-  default: --to html
-- name: printview_open_tab
-  description: open a new tab in the browser to display nbconvert output (for html and pdf only)
-  input_type: checkbox
-  default: true
+version https://git-lfs.github.com/spec/v1
+oid sha256:6504c1806c7be3ad566c77764db4ca1c35edcf6ffb74c00886d748e3c9248c2a
+size 485

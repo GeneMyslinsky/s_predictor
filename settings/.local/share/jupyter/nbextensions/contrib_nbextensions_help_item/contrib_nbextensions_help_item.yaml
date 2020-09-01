@@ -1,7 +1,3 @@
-Type: Jupyter Notebook Extension
-Name: contrib_nbextensions_help_item
-Description: The contrib_nbextensions_help_item is a tiny extension that just adds an item in the notebook's help menu, pointing to the jupyter_contrib_nbextensions at readthedocs.
-Link: README.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:1710a63b684af53830eabf3b7cf51741326dd0faf0281447da44f9e1e65fe306
+size 320

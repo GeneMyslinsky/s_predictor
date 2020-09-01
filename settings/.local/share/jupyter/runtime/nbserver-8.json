@@ -1,11 +1,3 @@
-{
-  "base_url": "/",
-  "hostname": "0.0.0.0",
-  "notebook_dir": "/",
-  "password": false,
-  "pid": 8,
-  "port": 8888,
-  "secure": false,
-  "token": "",
-  "url": "http://0.0.0.0:8888/"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b0fdc5aafac9eb95523ffffe83c3cc85dcf7269f7d950208b5a97a7dba2c1a2
+size 185

@@ -1,24 +1,3 @@
-// Launch QT Console attached to the current kernel
-
-define([
-    'base/js/namespace',
-    'base/js/events'
-    ], function(Jupyter, events) {
-        var load_ipython_extension = function () {
-            Jupyter.toolbar.add_buttons_group([
-                /**
-                 * Button to launch QTConsole
-                 */
-                Jupyter.keyboard_manager.actions.register ({
-                     'help'   : 'Run QTConsole',
-                     'icon'   : 'fa-terminal',
-                     'handler': function () {
-                         Jupyter.notebook.kernel.execute('%qtconsole')
-                     }
-                }, 'run-qtconsole', 'qtconsole')
-            ]);
-        };
-        return {
-            load_ipython_extension : load_ipython_extension
-        };
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:1686c44904bdaae38ab4b74cfed828a22a37a7c12a0ed4bbc0c2c3ac203c4d32
+size 793

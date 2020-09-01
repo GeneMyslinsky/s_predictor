@@ -1,12 +1,3 @@
-Type: IPython Notebook Extension
-Compatibility: 4.x, 5.x
-Name: Keyboard shortcut editor
-Main: main.js
-Icon: icon.png
-Link: README.md
-Description: Edit or remove Jupyter keyboard shortcuts, or add you own new ones
-Parameters:
-- name: kse_show_rebinds
-  description: "Show shortcut editing controls in the shortcuts dialog. If this is false, shortcuts can't be edited directly from the notebook, but any existing edits are still applied. Useful essentially just to make the shortcuts dialog a bit cleaner"
-  input_type: checkbox
-  default: true
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd7c69c89016c1f53adf56ad4b588257aef38c0a41ed68d4285d36efeadcd1f6
+size 543

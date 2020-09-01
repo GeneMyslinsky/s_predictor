@@ -1,18 +1,3 @@
-Type: IPython Notebook Extension
-Name: Notify
-Description: >
-  Show a browser notification when kernel becomes idle again after being busy
-  for some time - configurable after 0, 5, 10, or 30 seconds busy.
-Link: readme.md
-Icon: notification.png
-Main: notify.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: notify.sticky
-  description: Require interactions on notifications to dismiss them. (Chrome only)
-  input_type: checkbox
-  default: false
-- name: notify.play_sound
-  description: Play notification sound.
-  input_type: checkbox
-  default: false
+version https://git-lfs.github.com/spec/v1
+oid sha256:7546b86bdf10f59225ff9e55cffc6c662b320ce999ba5c7fbc4a09b073879fae
+size 549

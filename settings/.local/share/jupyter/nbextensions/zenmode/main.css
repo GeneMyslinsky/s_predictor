@@ -1,34 +1,3 @@
-.navbar-inner {
-    opacity: 0.5;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.navbar-inner:hover {
-    opacity: 1.0;
-}
-
-#maintoolbar .navbar-text {
-    display: none !important;
-}
-
-#notebook-container {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.cell {
-    background-color: rgb(255, 255, 255);
-}
-
-/*
-.CodeMirror {
-    background: #F8FCCF;
-}
-
-div.input_area {
-    margin: 2px;
-    border: none;
-}
-*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:c40a7e9b3f5a4548fc6e425eb8f1ee4efeac8756e8f13883dad8211bbce8a67a
+size 553

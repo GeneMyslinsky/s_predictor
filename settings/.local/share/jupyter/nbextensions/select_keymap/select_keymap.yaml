@@ -1,15 +1,3 @@
-Type: Jupyter Notebook Extension
-Name: Select CodeMirror Keymap
-Link: README.md
-Description: "A little extension to choose between CodeMirror keymaps: default, emacs, vim, and sublime"
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: select_keymap_line_wrap
-  description: Enable line wrap in CodeMirror
-  input_type: checkbox
-  default: true
-- name: select_keymap_local_storage
-  description: Store keymap selection on the client instead of server config
-  input_type: checkbox
-  default: true
+version https://git-lfs.github.com/spec/v1
+oid sha256:76217426d027abd888d5bd68339565789faba59573db7640d421a2965f1b1f03
+size 504

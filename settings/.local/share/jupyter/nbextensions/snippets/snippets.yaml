@@ -1,6 +1,3 @@
-Type: IPython Notebook Extension
-Compatibility: 4.x, 5.x
-Name: Snippets
-Main: main.js
-Description: Adds a drop-down menu to insert snippet cells into the current notebook.
-Link: README.md
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d209b04ffd2c7833343737e16f062f4155add5fb14eaff8dd6557d3ae06e62c
+size 188

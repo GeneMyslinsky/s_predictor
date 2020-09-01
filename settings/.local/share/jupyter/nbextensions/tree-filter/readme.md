@@ -1,8 +1,3 @@
-Tree-filter
-===========
-
-An extension that allows you to filter by filename in the Jupyter notebook file tree (aka dashboard) page.
-Based on [jdfreder/jupyter-tree-filter](https://github.com/jdfreder/jupyter-tree-filter)
-
-![](demo.gif)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:27a05857ada69f59e33b45ce8d1824dde996937767b5d871e2a968d0935cdd7c
+size 237

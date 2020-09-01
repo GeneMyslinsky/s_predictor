@@ -1,20 +1,3 @@
-Type: IPython Notebook Extension
-Name: Freeze
-Description: Freeze cells (forbid editing and executing) or make them read-only
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: Freeze.readonly_color
-  description: |
-    Color to use for read-only cell
-  default: '#fffef0'
-  input_type: color
-
-- name: Freeze.frozen_color
-  description: |
-    Color to use for frozen cell
-  default: '#f0feff'
-  input_type: color
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fa08c13b3e5fb98d219b79086589fb0a21d089b13c057f715d1a0e7fc5ca177
+size 452

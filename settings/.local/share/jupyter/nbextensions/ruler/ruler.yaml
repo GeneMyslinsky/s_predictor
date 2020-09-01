@@ -1,32 +1,3 @@
-Type: IPython Notebook Extension
-Name: Ruler
-Description: This extension enables the Ruler CodeMirror feature
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-
-- name: ruler_column
-  input_type: list
-  list_element:
-    input_type: number
-  description: Column where ruler is displayed
-  default: [78]
-
-- name: ruler_color
-  input_type: list
-  list_element:
-    input_type: color
-  description: Ruler color
-  default: ["#ff0000"]
-
-- name: ruler_linestyle
-  description: 'Ruler style, e.g. solid, dashed'
-  input_type: list
-  default: ['dashed']
-
-- name: ruler_do_css_patch
-  description: apply css patch for ruler padding bug in notebook >= 4.3
-  input_type: checkbox
-  default: true
+version https://git-lfs.github.com/spec/v1
+oid sha256:80ee0bbf6ec73a669b9261ac45447e326a7f8b71cc282aed0368b5439d2ab9da
+size 716

@@ -1,8 +1,3 @@
-Type: IPython Notebook Extension
-Name: Python Markdown
-Description: Allows embedding Python-code in markdown cells
-Link: readme.md
-Icon: python-markdown.png
-Main: main.js
-Preprocessor: pymdpreprocessor.py
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7316ca42e04bbafc5a63f3bf926e6711ae330af561b0e45ce1fccdc4679ad2e
+size 229

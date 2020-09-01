@@ -1,12 +1,3 @@
-Type: IPython Notebook Extension
-Name: ScrollDown
-Description: Scroll outputs down automatically
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: scrollDownIsEnabled
-  description: enable scroll_down toolbar button
-  input_type: checkbox
-  default: false
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d8f5e5c0c16b0a774047b0e8e018391bdba0852f968b5bf6c7fc563e8ff67f8
+size 295

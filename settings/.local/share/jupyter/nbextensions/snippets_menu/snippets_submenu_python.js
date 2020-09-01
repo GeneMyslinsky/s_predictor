@@ -1,24 +1,3 @@
-define([
-    "require",
-    "./snippets_submenus_python/numpy",
-    "./snippets_submenus_python/scipy",
-    "./snippets_submenus_python/matplotlib",
-    "./snippets_submenus_python/sympy",
-    "./snippets_submenus_python/pandas",
-    "./snippets_submenus_python/astropy",
-    "./snippets_submenus_python/h5py",
-    "./snippets_submenus_python/numba",
-    "./snippets_submenus_python/python",
-], function (requirejs, numpy, scipy, matplotlib, sympy, pandas, astropy, h5py, numba, python) {
-    return {
-        numpy:numpy,
-        scipy:scipy,
-        matplotlib:matplotlib,
-        sympy:sympy,
-        pandas:pandas,
-        astropy:astropy,
-        h5py:h5py,
-        numba:numba,
-        python:python,
-    };
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d8debb3129a9e0a22a2d61ebb9eca4bc0f826338ae9a36f4ee49fe837fb707e
+size 718

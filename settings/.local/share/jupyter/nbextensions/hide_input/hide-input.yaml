@@ -1,7 +1,3 @@
-Type: IPython Notebook Extension
-Compatibility: 3.x, 4.x, 5.x
-Main: main.js
-Name: Hide input
-Icon: icon.png
-Description: "toggle display of selected code cell's input"
-Link: readme.md
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d168df9cceb7fded767a4875990e71dc3888215ab74f7d62e5fdcf5c1165b93
+size 184

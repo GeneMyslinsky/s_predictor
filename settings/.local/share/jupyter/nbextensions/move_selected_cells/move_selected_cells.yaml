@@ -1,6 +1,3 @@
-Type: IPython Notebook Extension
-Name: Move selected cells
-Description: Move selected cell*s* using keybaord shortcuts Alt-up and Alt-down
-Link: README.md
-Main: main.js
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:66da25158c3b50f78fb78731ace31312a00bc8bb258f2bbc7f6bd87ea7b04f4e
+size 193

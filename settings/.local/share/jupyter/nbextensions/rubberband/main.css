@@ -1,12 +1,3 @@
-.highlight-drag
-{
-    background-color: transparent;
-    border: dashed #ff3333 3px;
-    position: absolute;
-    display: none;
-}
-
-.cell.selected
-{
-    background-color: #fcfcfc;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c9de7959ad00996dd9000549839362ee5b39042d841aa44737f36f71ee665d6
+size 181

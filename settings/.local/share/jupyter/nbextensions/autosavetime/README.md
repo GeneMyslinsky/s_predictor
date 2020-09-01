@@ -1,20 +1,3 @@
-autosavetime
-============
-
-
-Description
------------
-
-Optionally set the notebook autosave interval, and/or add a selector to the
-toolbar to set it.
-
-
-Parameters
-----------
-
-* `autosavetime_set_starting_interval` -
-  Set an autosave interval on notebook load. If false, the default is unchanged.
-* `autosavetime_starting_interval` -
-  Autosave interval (in minutes) which would be set on notebook load.
-* `autosavetime_show_selector` -
-  Add a selector to the toolbar to change the autosave interval
+version https://git-lfs.github.com/spec/v1
+oid sha256:bcf68da4e6e3f981b5ee3a0528bdd4841014a7dc0aead29e350c63ef9f3a425b
+size 499

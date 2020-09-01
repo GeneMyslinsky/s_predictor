@@ -1,7 +1,3 @@
-Type: Jupyter Notebook Extension
-Name: Load TeX macros
-Description: This extension automatically loads a set of latex commands from the file latexdefs.tex when a notebook is opened.
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:398776207d30a59c1f5d419d850865bd73b975ec7559e7805386425406bdf32f
+size 251

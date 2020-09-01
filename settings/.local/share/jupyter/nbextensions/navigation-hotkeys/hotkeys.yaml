@@ -1,25 +1,3 @@
-Type: IPython Notebook Extension
-Name: Navigation-Hotkeys
-Description: Additional hotkeys for easier navigation in the notebook
-Link: readme.md
-Icon: icon.png
-Main: main.js
-Compatibility: 4.x, 5.x
-Parameters:
-- name: toggle_enable_edit_shortcuts
-  description: Enable all edit shortcuts
-  input_type: checkbox
-  default: true
-- name: toggle_enable_command_shortcuts
-  description: Enable all command shortcuts
-  input_type: checkbox
-  default: true
-- name: toggle_enable_esc_shortcut
-  description: Enable Esc to enter Edit mode (so Esc toggles Edit/Command mode)
-  input_type: checkbox
-  default: true
-- name: toggle_enable_enter_shortcuts
-  description: Enable Enter keys to remain in Edit mode when currently in Edit mode
-  input_type: checkbox
-  default: true
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8aecbe717c6346e112338e1f6080a15f935f15e40a823984d93cc0f96123239
+size 765

@@ -1,12 +1,3 @@
-Type: IPython Notebook Extension
-Name: Tree Filter
-Description: An extension that allows you to filter by filename in the Jupyter notebook file tree (aka dashboard) page.
-Link: readme.md
-Main: index.js
-Section: tree
-Compatibility: 4.x, 5.x
-Parameters:
-- name: filter_keyword
-  input_type: string
-  description: Filter keyword
-  default: ""
+version https://git-lfs.github.com/spec/v1
+oid sha256:278df8aa993f5f4079d2c9caf42bcfa20dcf9f2f483c0f58fe99983123065c9f
+size 340

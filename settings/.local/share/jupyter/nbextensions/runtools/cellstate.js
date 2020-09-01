@@ -1,20 +1,3 @@
-
-
-  CodeMirror.defineOption("cellstate", false, function(cm, val, old) {
-    if (old && old != CodeMirror.Init) {
-      cm.clearGutter(cm.state.cellState.options.gutter);
-      cm.state.cellState = null;
-      cm.off("gutterClick", onGutterClick);
-      cm.off("change", onChange);
-      cm.off("viewportChange", onViewportChange);
-      cm.off("swapDoc", onChange);
-    }
-    if (val) {
-      cm.state.cellState = new State(parseOptions(val));
-      updateInViewport(cm);
-      cm.on("gutterClick", onGutterClick);
-      cm.on("change", onChange);
-      cm.on("viewportChange", onViewportChange);
-      cm.on("swapDoc", onChange);
-    }
-  });
+version https://git-lfs.github.com/spec/v1
+oid sha256:511fe38dd7fed7289927d8cd24e8154eee3952e65672a51dabe82f778c7dc986
+size 644

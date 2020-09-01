@@ -1,7 +1,3 @@
-Type: IPython Notebook Extension
-Name: highlighter
-Description: Enable to highlight select text in a markdown cell
-Link: readme.md
-Icon: icon.png
-Main: highlighter.js
-Compatibility: 3.x, 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:56c81b61a5cc9b4387032677c5af212dd1c0249f37f887e45e85611cc9d90acf
+size 196

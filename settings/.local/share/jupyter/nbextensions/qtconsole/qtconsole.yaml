@@ -1,6 +1,3 @@
-Type: IPython Notebook Extension
-Name: Launch QTConsole
-Link: README.md
-Description: Launch a QTConsole attached to the running kernel
-Main: qtconsole.js
-Compatibility: 4.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:448f965fbc92a7e663777c62e015ff50f9af226c4cee176e706e2fcf9b481563
+size 173

@@ -1,7 +1,3 @@
-Type: Jupyter Notebook Extension
-Compatibility: 4.x, 5.x
-Name: Cell Filter
-Main: cell_filter.js
-Link: README.md
-Description: |
-  An extension that allows you to filter cells by tags. Keywords entered into the search bar separated by spaces joins them with logical AND.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab01a2add14d042ff4ca13bdcd7118fd6f89573b6c5c5a90bcef55aa876c1a13
+size 269

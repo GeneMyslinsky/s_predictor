@@ -1,7 +1,3 @@
-Type: IPython Notebook Extension
-Name: Code Font Size
-Link: README.md
-Description: Adds toolbar buttons to increase and decrease code's font size.
-             This is useful, for example, when projecting the notebook.
-Main: code_font_size.js
-Compatibility: 4.x, 5.x
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6cb8d062ab339116c6959b9e8e6df43f20c830f34f36760ccd6b95a2b36babe
+size 267

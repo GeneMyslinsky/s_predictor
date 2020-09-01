@@ -1,15 +1,3 @@
-# Generating the documentation
-
-## html
-Simply type
-```
-jupyter nbconvert --to html_with_lenvs latex_env_doc.ipynb 
-```
-
-## latex
-For LaTeX, convert and then compile. Here we ask the converter to remove headers. This is useful for including a series of files into a master one. We provide a generic header `header.tex` which is included in documentation.tex. Look at it. 
-
-```
-jupyter nbconvert --to latex_with_toclenvs --LenvsLatexExporter.removeHeaders=True latex_env_doc.ipynb 
-xelatex documentation.tex
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:37eee5557a574ac5c5916e8ed253b2dd6c7a211772f9e404f55f25e9f2405fad
+size 511

@@ -1,14 +1,3 @@
-# Scratchpad notebook extension
-
-Adds a scratchpad cell to Jupyter notebook.
-This is a cell in which you can execute code against the current kernel without modifying the notebook document.
-
-Scratchpad cells can be executed using `Shift-Enter` (other shortcuts are appled to the notebook document). The scratchpad can be toggled by clicking the icon in the bottom-right, or via the keyboard shortcut `Ctrl-B`.
-
-![demo](demo.gif)
-
-
-## Credits
-
-This extension is a copy of the extension from MinRK here:
-`git clone git://github.com/minrk/nbextension-scratchpad`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e68c7e058ab4711bc8e6b90d60129cab813eeeb2417202bb04f4fa37f891185f
+size 561
