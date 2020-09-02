@@ -4,9 +4,9 @@ RUN apt-get install -y nodejs npm git tmux libpq-dev
 COPY requirements.txt /init/requirements.txt
 RUN pip3 install -r /init/requirements.txt
 
-COPY ./ibapi /init/ibapi
-WORKDIR /init/ibapi
-RUN python3 setup.py install
+#COPY ./ibapi /init/ibapi
+#WORKDIR /init/ibapi
+#RUN python3 setup.py install
 RUN pip3 install ib_insync
 WORKDIR /
 

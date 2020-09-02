@@ -16,6 +16,7 @@ plotly
 ib_insync
 
 sktime
+pmdarima
 
 pydruid[async, pandas,sqlalchemy,cli]
 
