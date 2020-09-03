@@ -1,22 +1,10 @@
-flask
-tornado
-nest_asyncio
-asyncpg
-sqlalchemy
-redis
-
 openpyxl
 
 requests
 bs4
 
-numpy
-pandas
 plotly
 ib_insync
-
-sktime
-pmdarima
 
 pydruid[async, pandas,sqlalchemy,cli]
 
@@ -25,3 +13,8 @@ qgrid
 jupyterlab
 jupyterthemes
 jupyter_contrib_nbextensions
+
+
+
+
+
