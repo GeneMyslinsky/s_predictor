@@ -1,3 +1,4 @@
 storage/** filter=lfs diff=lfs merge=lfs -text
 settings/** filter=lfs diff=lfs merge=lfs -text
+zk-single-kafka-single/** filter=lfs diff=lfs merge=lfs -text
 *.[[:space:]]csv filter=lfs diff=lfs merge=lfs -text
