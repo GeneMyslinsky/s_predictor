@@ -7,7 +7,7 @@ redis
 
 numpy
 pandas
-ta
+
 
 tensorflow
 keras
@@ -15,3 +15,5 @@ sciPy==1.4.1
 scikit-Learn
 sktime
 pmdarima
+ta
+tensortrade

@@ -8,11 +8,11 @@ COPY requirements.txt /init/requirements.txt
 RUN pip3 install -r /init/requirements.txt
 
 #RUN apt-get install -y wget
-COPY ta-lib.sh /init/ta-lib.sh
-RUN chmod +x /init/ta-lib.sh
-WORKDIR /init/
-RUN ./ta-lib.sh
-RUN pip3 install TA-lib
+#COPY ta-lib.sh /init/ta-lib.sh
+#RUN chmod +x /init/ta-lib.sh
+#WORKDIR /init/
+#RUN ./ta-lib.sh
+#RUN pip3 install TA-lib
 
 #COPY ./ibapi /init/ibapi
 #WORKDIR /init/ibapi
