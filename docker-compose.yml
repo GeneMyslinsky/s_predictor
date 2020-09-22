@@ -55,6 +55,16 @@ services:
       - ./storage/kz/kafka1/data:/var/lib/kafka/data
     depends_on:
       - zoo1
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    hostname: kafdrop
+    ports:
+      - "9001:9000"
+    environment:
+        KAFKA_BROKERCONNECT: "kafka1:9092"
+        JVM_OPTS: "-Xms32M -Xmx64M" 
+        SERVER_SERVLET_CONTEXTPATH: "/"
+        
   coordinator:
     image: apache/druid:0.17.0
     container_name: coordinator
