@@ -1,9 +1,0 @@
-winpty docker exec -it <container_id> sh
-
-
-docker build -t stocks/predictor .
-docker run -p 9000:9000 stocks/predictor
-
-docker-compose build predictor
-docker-compose up
-docker-compose up --remove-orphans

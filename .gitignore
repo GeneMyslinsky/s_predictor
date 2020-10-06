@@ -1,2 +1,4 @@
-/ibapi/*
-/storage/kz/**/*.log
+/settings/*
+/volume/*
+*.csv
+*.log
