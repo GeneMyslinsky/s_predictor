@@ -8,19 +8,7 @@ async def init_app():
     return pool
 pool = loop.run_until_complete(init_app())
 
-app = faust.App('tester',key_serializer='raw',value_serializer='raw',broker='kafka://broker:29092')
-topic = app.topic('tester', value_type=bytes)
-
-@app.agent(topic)
-async def processor(stream):
-    async for e in stream.events():
-    # async for payload in stream:
-        print(e.key.decode('UTF-8'))
-        print(e.message.timestamp)
-        data = json.loads(e.value)
-        print(data)
-
-async def checkTable():
+async def checkTable(contract,candles):
     async with pool.acquire() as con:
         r = await con.fetchval(f"""
                             SELECT EXISTS (
@@ -30,26 +18,72 @@ async def checkTable():
                             AND    c.relname = '{contract}_{candles}'
                             AND    c.relkind = 'r'    -- only tables
                             );""")
-        print(r)
-async def createTable():
-    cur.execute("""CREATE TEMP TABLE codelist(id INTEGER, z INTEGER) ON COMMIT DROP""")
+        
+        c = "TABLE EXISTS"
+        if r == False:
+            c = await con.execute(f"""
+                        CREATE TABLE "data".{contract}_{candles} (
+                        "date" timestamptz(0) NOT NULL,
+                        "open" float8 NULL,
+                        high float8 NULL,
+                        low float8 NULL,
+                        "close" float8 NULL,
+                        volume int4 NULL,
+                        average float8 NULL,
+                        barcount int4 NULL,
+                        CONSTRAINT {contract}_{candles}_pk PRIMARY KEY (date)
+                        );
+                    """)
+        
+        return c
+async def createTemp(contract,candles,values):
+    async with pool.acquire() as con:
+        await con.execute(f"""
+                            CREATE TEMP TABLE _{contract}_{candles} (
+                            "date" varchar(25) NOT NULL,
+                            "open" float8 NULL,
+                            high float8 NULL,
+                            low float8 NULL,
+                            "close" float8 NULL,
+                            volume int4 NULL,
+                            average float8 NULL,
+                            barcount int4 NULL
+                            )
+                        """)
+        await con.copy_records_to_table(f"_{contract}_{candles}", records=values)
+        await con.execute(f"""
+                                INSERT INTO "data".{contract}_{candles}("date", "open", high, low, "close", volume, average, barcount)
+                                SELECT cast("date" as timestamp)::timestamp at time zone 'America/Toronto' , "open", high, low, "close", volume, average, barcount FROM _{contract}_{candles}
+                                ON CONFLICT ("date")
+                                DO UPDATE SET 
+                                    "open"=EXCLUDED."open",
+                                     high=EXCLUDED.high, 
+                                     low=EXCLUDED.low, 
+                                     "close"=EXCLUDED."close", 
+                                     volume=EXCLUDED.volume, 
+                                     average=EXCLUDED.average, 
+                                     barcount=EXCLUDED.barcount
+                                     ;
+                            """)
+        await con.execute(f"""
+                            DROP TABLE IF EXISTS _{contract}_{candles}
+                                 ;
+                        """)
+        return 1
+app = faust.App('tester',key_serializer='raw',value_serializer='raw',broker='kafka://broker:29092')
+topic = app.topic('tester', value_type=bytes)
 
-    cur.execute("""
-        UPDATE table_name
-        SET z = codelist.z
-        FROM codelist
-        WHERE codelist.id = vehicle.id;
-        """)
-async def createTempTable():
-    cur.execute("""CREATE TEMP TABLE codelist(id INTEGER, z INTEGER) ON COMMIT DROP""")
-    cur.executemany("""INSERT INTO codelist (id, z) VALUES(%s, %s)""", rows)
+@app.agent(topic)
+async def processor(stream):
+    async for e in stream.events():
+    # async for payload in stream:
+        print(json.loads(e.key))
+        print(e.message.timestamp)
+        data = pickle.loads(e.value)
+        print(data)
 
-    cur.execute("""
-        UPDATE table_name
-        SET z = codelist.z
-        FROM codelist
-        WHERE codelist.id = vehicle.id;
-        """)
+
+
 
 
 # tuples = [tuple(x) for x in df.values]

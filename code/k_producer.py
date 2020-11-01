@@ -7,5 +7,8 @@ k_conn = {'bootstrap.servers': "broker:29092",
         'client.id': socket.gethostname()}
 producer = Producer(k_conn)
 
-def kp(topic,value):
+def ProduceJ(topic,value):
     producer.produce(topic, key=str(uuid.uuid4()), value=json.dumps(value))
+
+def ProduceB(topic,key, value):
+    producer.produce(topic, key=json.dumps(key), value=value)
