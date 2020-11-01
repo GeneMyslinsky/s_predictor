@@ -20,9 +20,10 @@ async def checkTable(contract,candles):
                             );""")
         
         c = "TABLE EXISTS"
+        print(r)
         if r == False:
             c = await con.execute(f"""
-                        CREATE TABLE "data".{contract}_{candles} (
+                        CREATE TABLE IF NOT EXISTS "data".{contract}_{candles} (
                         "date" timestamptz(0) NOT NULL,
                         "open" float8 NULL,
                         high float8 NULL,
@@ -69,6 +70,7 @@ async def createTemp(contract,candles,values):
                             DROP TABLE IF EXISTS _{contract}_{candles}
                                  ;
                         """)
+        print("SUCCESSFUL INSERT")
         return 1
 app = faust.App('tester',key_serializer='raw',value_serializer='raw',broker='kafka://broker:29092')
 topic = app.topic('tester', value_type=bytes)
@@ -77,10 +79,15 @@ topic = app.topic('tester', value_type=bytes)
 async def processor(stream):
     async for e in stream.events():
     # async for payload in stream:
-        print(json.loads(e.key))
-        print(e.message.timestamp)
+        key = json.loads(e.key)
+        contract,params = key['contract']['symbol'].lower(),key['params']['candles'].replace(" ", "")
+        # print(e.message.timestamp)
         data = pickle.loads(e.value)
-        print(data)
+        data.index = data.index.astype(str)
+        data = list(data.to_records())
+        await checkTable(contract,params)
+        await createTemp(contract,params,data)
+
 
 
 
