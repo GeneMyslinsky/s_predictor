@@ -12,15 +12,15 @@ services:
       - "9000:8888"
     env_file:
       - environment
-    environment:
-      - TZ: 'America/Toronto'
     restart: on-failure
 
   postgres:
     container_name: postgres
     image: postgres:latest
     volumes:
-      - ./volume/pg:/var/lib/postgresql
+      - ./volume/pg/pgdata:/var/lib/postgresql/data
+      - ./volume/pg/pgconf:/etc/postgresql
+      - ./volume/pg/pglog:/var/log/postgresql
     ports:
       - "5432:5432"
     env_file:

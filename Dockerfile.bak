@@ -1,5 +1,4 @@
 FROM continuumio/anaconda3:latest
-RUN apt-get update
 RUN apt-get install -y nodejs npm git tmux libpq-dev python-tablib
 
 COPY req0.txt /init/req0.txt

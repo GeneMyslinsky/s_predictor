@@ -12,7 +12,6 @@ jupyterlab
 jupyterthemes
 jupyter_contrib_nbextensions
 
-aiokafka
 redisworks
 
 
