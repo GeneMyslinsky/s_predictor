@@ -54,6 +54,7 @@ services:
     container_name: broker
     depends_on:
       - zookeeper
+    restart: always
     ports:
       - "29092:29092"
       - "9092:9092"
@@ -88,6 +89,7 @@ services:
     image: cnfldemos/kafka-connect-datagen:0.3.2-5.5.0
     hostname: connect
     container_name: connect
+    restart: always
     depends_on:
       - zookeeper
       - broker

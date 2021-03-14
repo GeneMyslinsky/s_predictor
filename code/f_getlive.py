@@ -1,4 +1,4 @@
-#faust -A f_getlive worker -l info --web-port 6066
+#faust -A f_getlive worker -l info --web-port 6067
 import faust, json
 import asyncpg,asyncio
 loop = asyncio.get_event_loop()
